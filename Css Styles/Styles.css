@@ -1,0 +1,807 @@
+body{
+    margin:0;
+}
+
+/* container section-1 */
+.container1{
+    width: 100vw;
+    height: 110vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+
+}
+.content-large{
+    grid-row-start:2 ;
+    grid-row-end: span4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.content-small{
+    grid-row-start: 2;
+    grid-row-end:span 4;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+
+/* Nav Bar */
+nav {
+    width: 100%;
+    height: 7vh;
+    background: rgb(7, 7, 7);
+    color: rgb(198, 191, 191);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+  
+nav.logo {
+    padding: 10%;
+    width: 25%;
+    text-align: center;
+    text-decoration-color: rgb(5, 10, 10);
+}
+  
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+nav .menu a {
+    width: 20%;
+    text-decoration: none;
+    color: rgb(198, 191, 191);
+    font-weight: bold;
+}
+
+/* Swiper */
+
+.swiper{
+    width: 80%;
+    height: fit-content;
+    
+}
+.swiper-slide img{
+ align-items: center;
+ width: 80%;
+ height: 100%;
+ border: 4px solid rgb(24, 23, 23);
+}
+
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+    color: white;
+}
+.swiper.swiper-pagination-bullet-active{
+    background: #fff;
+}
+
+
+/* Hover listing of top 10 list of sports */
+.box{
+    width: 95%;
+    height: 95%;
+    border-bottom: 20px solid #03a9f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.box h2{
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.box ul{
+    position: relative;
+    background: #fff;
+}
+.box ul li{
+    list-style: none;
+    padding: auto;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+}
+.box ul:hover li
+{
+    opacity: 2.2;
+}
+.box ul li:hover
+{
+    transform: scale(1.1);
+    z-index: 100;
+    background: #141702;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: rgb(255, 255, 255);
+    opacity: 0.1;
+}
+.box ul li span{
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    line-height:40px ;
+    background: #25bcff;
+    color: #fff;
+    display:inline-block;
+    border-radius: 50%;
+    margin-right: 20px ;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+.box ul li:hover span{
+    background: #fff;
+    color: #25bcff;
+}
+
+/* Section-2 class-colored-section...............*/
+.container2{
+    width: 100vw;
+    height: 215vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+
+    
+}
+.header2{
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+}
+
+.Content-large2{
+    grid-row-start:2 ;
+    grid-row-end: span4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-family: Arial;
+    font-weight: bold;
+   
+    
+    
+}
+.Content-small2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+.Content-small3{
+    grid-row-start: 3;
+    grid-row-end: span 4;
+    grid-column-start:3;
+    grid-column-end: 4;
+
+}
+/* Container 2 ke small div me fill kare rahe hai -- hover image */
+
+.wrapper{
+    width: 400px;
+    height:400px;
+    margin: 0 auto;
+}
+figure {
+width: 25%;
+float: left;
+margin: 0;
+}
+figcaption {
+text-align: center;
+}
+
+figcaption h2 {
+    text-transform: uppercase;
+    margin: 15px 0;
+    font-family: "Poppins ExtraBold";
+}
+figcaption p {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    font-family: roboto;
+    letter-spacing: 2px;
+}
+figcaption a {
+    background: tomato;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    letter-spacing: 3px;
+}
+.hover-animation {
+    position: relative;
+    height: 350px;
+    width: 350px;
+    margin: 10% auto 0;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+  
+.hover-animation img {
+    position: absolute;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.hover-animation img.img-front:hover{
+    opacity:0;
+    cursor: pointer;
+} 
+  
+/* media quries */
+@media(max-width: 1028px){
+    #title{
+            text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* Section-Section-3 class-white-section..................................*/
+body{
+    margin: 0;
+}
+
+.container3{
+    width: 100vw;
+    height: 200vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+  }
+  .container-header3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+  }
+  .container-content-large3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: span4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+  .container-content-small2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 3;
+  
+  }
+  .container-content-small3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3 ;
+    grid-row-end: 4;
+  
+  }
+
+/* Hover Image graph */
+.img-area{
+    width: 350px;
+    height: 300px;
+    border-color: #d2ef2b;
+    
+   
+}
+.img-area img{
+    width: 100%;
+}
+.img-area img:hover{
+    transform: scale(1.2);
+    -webkit-transform-origin-z: 10rem;
+}  
+  
+/* Section-4 colored-section..................................*/
+body{
+    margin: 0;
+}
+
+.container4{
+    width: 100vw;
+    height: 150vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+  }
+.container-header4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+  }
+.container-content-large4{
+    
+    grid-row-start:2;
+    grid-row-end: span4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+.container-content-small4{
+    
+    grid-row-start:2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  
+}
+.container-content-small-4{
+    
+    grid-row-start:3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  
+}
+
+/* Section-5  */
+body{
+    margin: 0;
+}
+
+.container5{
+    width: 100vw;
+    height: 150vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+  }
+  .container-header5{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+  }
+  .container-content-large5{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: span4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+  .container-content-small51{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+  
+}
+
+/* Hover listing of top 10 list of sports */
+.boxx{
+    width: 90%;
+    height: 60%;
+    border-bottom: 20px solid #03a9f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.boxx h2{
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.boxx ul{
+    position: relative;
+    background: #fff;
+}
+.boxx ul li{
+    list-style: none;
+    padding: auto;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+}
+.boxx ul:hover li
+{
+    opacity: 2.2;
+}
+.boxx ul li:hover
+{
+    transform: scale(1.1);
+    z-index: 100;
+    background: #141702;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: rgb(255, 255, 255);
+    opacity: 0.1;
+}
+.boxx ul li span{
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    line-height:40px ;
+    background: #25bcff;
+    color: #fff;
+    display:inline-block;
+    border-radius: 50%;
+    margin-right: 20px ;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+.boxx ul li:hover span{
+    background: #fff;
+    color: #25bcff;
+}
+
+/* Section-6 */
+.container6{
+    width: 100vw;
+    height: 130vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+
+    
+}
+.container-header6{
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+}
+
+.container-content-large6{
+    grid-row-start:2 ;
+    grid-row-end: span4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-family: Arial;
+    font-weight: bold;
+   
+    
+    
+}
+.container-content-small61{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+.container-content-small62{
+    grid-row-start: 3;
+    grid-row-end:  4;
+    grid-column-start:3;
+    grid-column-end: 4;
+
+}
+
+/* sectrion-7 */
+.container7{
+    width: 100vw;
+    height: 330vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+}
+.container-header7{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+}
+.container-content-large7{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: span4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+.container-content-small71{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+  
+}
+
+/* Section-8 */
+.container8{
+    width: 100vw;
+    height: 230vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+
+    
+}
+.container-header8{
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-overflow: inherit;
+}
+
+.container-content-large8{
+    grid-row-start:2 ;
+    grid-row-end: span4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-family: Arial;
+    font-weight: bold;
+   
+    
+    
+}
+.container-content-small81{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+
+/* Section-9 */
+.container9{
+    width: 100vw;
+    height: 160vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+}
+.container-header9{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    text-overflow: inherit;
+  
+}
+.container-content-large9{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: span4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+.container-content-small91{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+  
+}
+
+/* Sectiom-10 */
+.container10{
+    width: 100vw;
+    height: 190vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+
+    
+}
+.container-header10{
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+}
+
+.container-content-large10{
+    grid-row-start:2 ;
+    grid-row-end: span4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-family: Arial;
+    font-weight: bold;
+   
+    
+    
+}
+.container-content-small10{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start:3;
+    grid-column-end: 4;
+}
+
+/* Section-11 */
+.container11{
+    width: 100vw;
+    height: 150vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+}
+.container-header11{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+}
+.container-content-large-11{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: span4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+.container-content-small-11-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+  
+}
+
+/* 1.About page  2.Contact page */
+/* Section-11 */
+.container12{
+    width: 100vw;
+    height: 180vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* repear(3, 1fr) this things doing same*/
+    grid-template-rows:50px 1fr 1fr  ;
+    
+}
+.container-header12{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+}
+.container-content-large-12{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: span4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  
+}
+.container-content-small-12-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+  
+}
+
+/* Section-13 */
+.container13{
+    width: 100vw;
+    height: 30vh;
+    background:#c1c1c1;
+    
+    display: grid;
+   
+    
+}
+
+.container-content-large-13{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:2 ;
+    grid-row-end: 4;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-overflow: inherit;
+  
+}
+
+
